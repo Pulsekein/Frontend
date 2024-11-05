@@ -1,0 +1,40 @@
+
+.homepage-container {
+    background-image: url('https://xeroshoes.com/wp-content/uploads/2023/08/HSM-TLWV_HFS-II_Tidal-Wave_AngleR_00646_WEB.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    color: white; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.homepage-title {
+    font-size: 48px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+}
+
+.btn-primary {
+    font-size: 20px; 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    transition: background-color 0.3s; 
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+}
