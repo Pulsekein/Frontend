@@ -9,13 +9,13 @@ function ProductDetail() {
     const navigate = useNavigate();
     
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/products/${id}`)
+        axios.get(`https://backend-zbj9.onrender.com/api/products/${id}`)
             .then(response => setProduct(response.data))
             .catch(error => console.error(error));
     }, [id]);
 
     const addToCart = () => {
-        axios.post('http://localhost:5000/api/cart', { productId: product.id })
+        axios.post('https://backend-zbj9.onrender.com/api/cart', { productId: product.id })
             .then(response => navigate('/checkout'))
             .catch(error => console.error(error));
     };
