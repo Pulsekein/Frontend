@@ -6,7 +6,7 @@ function Checkout() {
     const navigate = useNavigate();
 
     const handlePayment = (success) => {
-        axios.post('http://localhost:5000/api/checkout', { success })
+        axios.post('https://backend-zbj9.onrender.com/api/checkout', { success })
             .then(response => {
                 alert(response.data.message);
                 navigate('/payment-status');
